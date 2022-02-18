@@ -1,0 +1,16 @@
+#端口配置
+server:
+  port: 1101
+
+init:
+  param:
+    fileurl: /app/file/
+    #fileurl: D:/file/
+    url:
+      base: https://www.amazon.com/
+      #见解API（用户）
+      opinion: https://www.amazon.com/hz/gamification/api/contributor/dashboard/{account}
+      #评论API（用户）
+      comment: https://www.amazon.com/profilewidget/timeline/visitor?nextPageToken=&filteredContributionTypes=productreview&directedId={account}&token=eyJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOiIxNDItNTc5NTAyNS00MTQzOTQ5IiwiZXhwIjoxNjQ0ODIyMjMxLCJkaXJlY3RlZElkIjoiYW16bjEuYWNjb3VudC5BSDJSSENWR0pMWkRTVzZTNlpDVVpSSFJETEVBIn0.iAuSqyKLegbU7sHbjpK_tSTV6510-ihl9VnM4jImKrk
+      #评论排名API（用户）
+      ranking: https://www.amazon.com/profilewidget/bio/{account}?view=visitor
